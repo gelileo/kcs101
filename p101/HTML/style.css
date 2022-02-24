@@ -1,0 +1,9 @@
+.w3-codespan {
+    font-size: 105%;
+    color: crimson;
+    font-family: Consolas,Menlo,"courier new",monospace;
+    padding-left: 4px;
+    padding-right: 4px;
+    font-size: 1.1em;
+    background-color: rgba(222,222,222,0.3);  
+}

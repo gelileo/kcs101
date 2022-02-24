@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HTML Introduction</title>
+  <link href="./style.css" rel="stylesheet" type="text/css">
+  <link href="../main.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+<h1>What is HTML?</h1>
+<ul>
+  <li>HTML stands for Hyper Text Markup Language</li>
+  <li>HTML is the standard markup language for creating Web pages</li>
+  <li>HTML describes the structure of a Web page</li>
+  <li>HTML consists of a series of elements</li>
+<!--
+  <li>... See <a href="https://www.w3schools.com/html/html_intro.asp">here</a></li>
+  -->
+</ul>
+<h1>Basic Structure</h1>
+
+ <p>All HTML documents must start with a document type declaration: <code class="w3-codespan">&lt;!DOCTYPE html&gt;</code>.</p>
+<p>The HTML document itself begins with <code class="w3-codespan">&lt;html&gt;</code> and ends with <code class="w3-codespan">&lt;/html&gt;</code>.</p>
+<p>The visible part of the HTML document is between <code class="w3-codespan">&lt;body&gt;</code> and <code class="w3-codespan">&lt;/body&gt;</code>. </p>
+
+<h3><a href="./sample.html">Make a simple document</a></h3>
+<h1>What is an HTML Element?</h1>
+<p>An HTML element is defined by a start tag, some content, and an end tag:</p>
+<div style="font-size:20px;padding:10px;margin-bottom:10px;">
+<span class="w3-codespan">
+<span class="w3-codespan">&lt;</span>tagname<span class="w3-codespan">&gt;</span></span>
+Content goes here...
+<span class="w3-codespan">
+<span class="w3-codespan">&lt;</span>/tagname<span class="w3-codespan">&gt;</span></span>
+</div>
+
+<p>The HTML <strong>element</strong> is everything from the start tag to the end tag:</p>
+
+<div style="font-size:20px;padding:10px;margin-bottom:10px;">
+<span class="w3-codespan"><span class="w3-codespan">&lt;<span class="w3-codespan">h1</span>&gt;</span></span>I am a Heading1<span class="w3-codespan"><span class="w3-codespan">&lt;</span>/h1<span class="w3-codespan">&gt;</span></span>
+</div>
+
+<div style="font-size:20px;padding:10px;margin-bottom:10px;">
+<span class="w3-codespan"><span class="w3-codespan">&lt;</span>p<span class="w3-codespan">&gt;</span></span>I am a paragraph.<span class="w3-codespan"><span class="w3-codespan">&lt;</span>/p<span class="w3-codespan">&gt;</span></span>
+</div>
+
+<table class="ws-table-all notranslate">
+<tr>
+<th>Start tag</th>
+<th>Element content</th>
+<th>End tag</th>
+</tr>
+<tr>
+<td>&lt;h1&gt;</td>
+<td>I am a Heading1</td>
+<td>&lt;/h1&gt;</td>
+</tr>
+<tr>
+<td>&lt;p&gt;</td>
+<td>I am a paragraph.</td>
+<td>&lt;/p&gt;</td>
+</tr>
+<tr>
+<td>&lt;br&gt;</td>
+<td><em>none</em></td>
+<td><em>none</em></td>
+</tr>
+</table>
+
+<h1>Headings and paragraphs </h1>
+<H2>Headings</H2>
+<p>In HTML headings are marked with using heading tags such <span class="w3-codespan">h1</span>.<p>
+  
+<p>There are six levels of heading supported. The biggest is <span class="w3-codespan">h1</span>,  the smallest is <span class="w3-codespan">h6</span>. 
+
+<!--
+  Try it <a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_basic_headings">here</a>. -->
+
+On most pages you probably won't see h4-6 used.</p>
+
+<div class="try">Let Class Try</div>
+
+  
+<H2>Paragraphs</H2>
+<p>Paragraphs are separated using <span class="w3-codespan">p</span> tags. This automatically separates them into blocks, leaving a gap in between.</p>
+
+  <p>Within a paragraph you can make text <strong>bold</strong> or <em>italic</em>. Or think them as  'strong' and 'emphasised' </p>
+
+  <div class="try">Let Class Try</div>
+
+  <h2>Blank lines and void tags</h2>
+
+  <p>It is also possible to insert extra blank lines manually using the <span class="w3-codespan">br</span> tag. The <span class="w3-codespan">br</span> tag is a special type of tag (called a 'void tag'); you don't need a closing <span class="w3-codespan">br</span> tag, just un opening one.</p>
+
+  <br>
+
+  <h2>Comments</h2>
+
+  <p>You can write comments in your html code, which won't be displayed in the browser.</p>
+
+  <!--- This is a comment. It won't show up in the page, but you will be able to see it if you view the page source (be warned!) -->
+
+
+  <h2>Lists</h2>
+  <p>Html has two basic types of list:</p>
+
+  <ol>
+    <li>Ordered lists (<span class="w3-codespan">&lt;ol&gt;</span>) - displays a numbered list</li>
+    <li>Unordered lists (<span class="w3-codespan">&lt;ul&gt;</span>) - displays a list of bullet points</li>
+  </ol>
+
+  <p>Both have the same basic structure.</p>
+
+  <ul>
+    <li>An opening list tag</li>
+    <li>Many list items (<span class="w3-codespan">&lt;li&gt;</span>)</li>
+    <li>A closing list tags</li>
+  </ul>
+
+
+  <div class="try">Let Class Try</div>
+
+  <h2>Links</h2>
+  <p>Links look like this: <a href="http://www.facebook.com">link to facebook</a>. You specify where you want the link to point by specifying the 'href' inside the &lt;a&gt; tag.</p>
+
+  <p>The href can also point to local files. For example, <a href="./example.html">this</a> is a link to this page you're reading at the moment. Notice that the protocol and host part of the URL has been replaced by a "."</p>
+
+  <h2>Images</h2>
+  <p>Images are a bit like links. You specify the location of the image with the 'src' property in the &lt;img&gt; tag. Note that img tags are like br tags: they don't come in pairs. The 'alt' property should be used to provide a description of the image in case it won't load or the user is partially sighted.</p>
+
+  <p>Images can be stored on the same host ... </p>
+  <img src="./images/olympics.png" alt="A local image">
+
+  <p>... or on another server entirely.</p>
+  <img src="https://olympics.com/Images/Static/beijing-images/disciplines/olympics/bobsleigh.svg" alt="Winter Olympics - Bob Sleigh.">
+
+
+  <h2>Tables</h2>
+  <p>Tables are used for holding data</p>
+  <table class='table'>
+    <tr>
+      <th>Name</th>
+      <th>College</th>
+    </tr>
+    <tr>
+      <td>Tom</td>
+      <td>Oriel</td>
+    </tr>
+    <tr>
+      <td>Dave</td>
+      <td>Hertford</td>
+    </tr>
+  </table>
+
+
+
+
+
+</body>
+</html>
