@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+      .slide_container {
+        padding: 20px 5px; 
+        float: left; 
+        width: 45%; 
+        padding: 5px;
+      }
+    </style>
+  </head>
+  <body>
+  <h1>More on HTML</h1>
+  <div class="clearfix">
+  <div class="slide_container">
+  <p style="color: red">RED</p>
+  <input onchange="changeRGBA()" oninput="changeRGBA()" type="range" id="slideRed" name="slideRed" value="255" min="0" max="255">
+  <div id="valRed" xstyle="background-color:red;border-radius:5px;color:white;opacity:0.8">255</div>    
+  </div>
+
+  <div class="slide_container">
+  <p style="color: green">GREEN</p>
+  <input onchange="changeRGBA()" oninput="changeRGBA()" type="range" id="slideGreen" name="slideGreen" value="99" min="0" max="255">
+  <div id="valGreen">0</div>
+  </div>
+  </div>
+
+  <div class="clearfix">
+  <div class="slide_container">  
+  <p style="color: blue">BLUE</p>
+  <input onchange="changeRGBA()" oninput="changeRGBA()" type="range" id="slideBlue" name="slideBlue" value="71" min="0" max="255">
+  <div id="valBlue">0</div>
+  </div>
+    
+  <div class="slide_container">
+  <p>ALPHA</p>
+  <input onchange="changeRGBA()" oninput="changeRGBA()" type="range" id="slideAlpha" name="slideAlpha" value="5" min="0" max="10">
+  <div id="valAlpha">0</div>
+  </div>
+  </div>
+    
+
+<div id="rgbaresult" style="line-height:20px; width:300px">
+<p id="rgbaresulttext" style="padding:20px 20px 10px 20px; font-size:120%;font-weight:bold;font-family:Consolas, 'Courier New', Courier, monospace;">&nbsp;</p>
+  <p id="rgbaresulttext_hex" style="padding:10px 20px 20px 20px; font-size:120%;font-weight:bold;font-family:Consolas, 'Courier New', Courier, monospace;">&nbsp;</p>
+</div>
+
+
+    
+<script>
+  window.onload = function() {
+    changeRGBA();  
+  }
+function toRgbaString(red, green, blue, opacity) {
+  return "rgba(" + red + ", " + green + ", " + blue + ", " + opacity + ")";
+}
+
+function toHex(n) {
+  var hex = n.toString(16);
+  while (hex.length < 2) {hex = "0" + hex; }
+  return hex;
+}
+  
+function changeRGBA() {
+  var col, r, g, b, a;
+  r = document.getElementById("slideRed").value;
+  g = document.getElementById("slideGreen").value;
+  b = document.getElementById("slideBlue").value;
+  a = document.getElementById("slideAlpha").value/10;
+   
+  let hex_clr = "#"+toHex(Number(r))+toHex(Number(g))+toHex(Number(b))+toHex(Math.round(a * 255));
+ 
+  document.getElementById('valRed').innerHTML = r;
+  document.getElementById('valGreen').innerHTML = g;
+  document.getElementById('valBlue').innerHTML = b;
+  document.getElementById('valAlpha').innerHTML = a;
+
+  col = toRgbaString(r, g, b, a);
+  
+  document.getElementById('rgbaresult').style.backgroundColor = col
+  document.getElementById('rgbaresulttext').innerHTML = col;
+  document.getElementById('rgbaresulttext_hex').innerHTML = hex_clr;  
+}
+</script> 
+  </body>
+</html>
