@@ -1,90 +1,77 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-  <title>Title</title>
-  <!--
-  <link rel="icon" type="image/x-icon" href="../images/favicon.ico"> 
-  -->
-  <style>
-  
-/*     code {
-    color: crimson;
-    font-family: Consolas,Menlo,"courier new",monospace;
-    padding-left: 4px;
-    padding-right: 4px;
-    font-size: 1.1em;
-    background-color: rgba(222,222,222,0.3);  
-} */
-    p {
-      color: red;
-      text-align: center;
-    }
-  </style>
-
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
+	<link rel="stylesheet" href="./classRS/course_page/css/main.css">
+	<title>Little Star Programming 101</title>
+	<link rel="shortcut icon" href="favicon.png" type="image/x-icon">
 </head>
-<body style=" font-size: 2em;">
-<h1>CSS Syntax</h1>
-  <pre>
-    p {
-      color: red;
-      text-align: center;
-    }
-  </pre>
 
-  <li style="padding: 10px">
-    <code style="color: crimson;
-    font-family: Consolas,Menlo,'courier new',monospace;
-    padding-left: 4px;
-    padding-right: 4px;
-    font-size: 1.1em;
-    background-color: rgba(222,222,222,0.3); ">p</code>
-                         is a selector in CSS (it points to the HTML element you want to style: 
-                         <code style="color: crimson;     font-family: Consolas,Menlo,'courier new',monospace;     padding-left: 4px;     padding-right: 4px;     font-size: 1.1em;     background-color: rgba(222,222,222,0.3); ">&lt;p&gt;</code>).
-  </li>
-  
-  <li style="padding: 10px">
-     <code style="color: crimson;     font-family: Consolas,Menlo,'courier new',monospace;     padding-left: 4px;     padding-right: 4px;     font-size: 1.1em;     background-color: rgba(222,222,222,0.3); ">color</code>
-                         is a property, and 
-                        <code style="color: crimson;     font-family: Consolas,Menlo,'courier new',monospace;     padding-left: 4px;     padding-right: 4px;     font-size: 1.1em;     background-color: rgba(222,222,222,0.3); ">red</code>
-                         is the property value
-  </li>
-  <li style="padding: 10px">
-     <code style="color: crimson;     font-family: Consolas,Menlo,'courier new',monospace;     padding-left: 4px;     padding-right: 4px;     font-size: 1.1em;     background-color: rgba(222,222,222,0.3); ">text-align</code>
-                         is a property, and 
-     <code style="color: crimson;     font-family: Consolas,Menlo,'courier new',monospace;     padding-left: 4px;     padding-right: 4px;     font-size: 1.1em;     background-color: rgba(222,222,222,0.3); ">center</code>
-                         is the value.
-  </li>
+<body>
+	<div class="header">
+		<div class="site-avatar">
+      <a href="https://littlestarchineseschool.com/">
+			<img src="./classRS/course_page/lscs.png" alt="Little Star" >
+      </a>
+    </div>
 
+    <div class="header-content">
+      <h1>Programming 101 For Kids</h1>
+      <h2>An introductory course to software programming for beginners</h2>
+    </div>
+  </div>
+ 
+  <div class="tagline">
+    <div class="content-wrapper">
+      <h3>About This Course</h3>
+      <p>Have you ever wished you knew how to program, but had no idea where to start from? Or are you bored with learning code on Scratch and wondering what a real program looks like?  </p>
+       <p>This course will introduce you to real world pragramming languages. More importantly, it will introduce you to the fundamental coding concepts and help you think like a programmer.
+      </p>
+    </div>
+  </div>
 
-  <p>This is an example of <code style="color: crimson;     font-family: Consolas,Menlo,'courier new',monospace;     padding-left: 4px;     padding-right: 4px;     font-size: 1.1em;     background-color: rgba(222,222,222,0.3); ">p</code> tag </p>
-  
-<!--
-  <li style="padding: 10px">
-    <code style="color: crimson;     font-family: Consolas,Menlo,'courier new',monospace;     padding-left: 4px;     padding-right: 4px;     font-size: 1.1em;     background-color: rgba(222,222,222,0.3); ">p</code>
-                         is a selector in CSS (it points to the HTML element you want to style: 
-                         <code style="color: crimson;     font-family: Consolas,Menlo,'courier new',monospace;     padding-left: 4px;     padding-right: 4px;     font-size: 1.1em;     background-color: rgba(222,222,222,0.3); ">&lt;p&gt;</code>).
-  </li>
-  
-  <li style="padding: 10px">
-     <code style="color: crimson;     font-family: Consolas,Menlo,'courier new',monospace;     padding-left: 4px;     padding-right: 4px;     font-size: 1.1em;     background-color: rgba(222,222,222,0.3); ">color</code>
-                         is a property, and 
-                        <code style="color: crimson;     font-family: Consolas,Menlo,'courier new',monospace;     padding-left: 4px;     padding-right: 4px;     font-size: 1.1em;     background-color: rgba(222,222,222,0.3); ">red</code>
-                         is the property value
-  </li>
-  <li style="padding: 10px">
-     <code style="color: crimson;     font-family: Consolas,Menlo,'courier new',monospace;     padding-left: 4px;     padding-right: 4px;     font-size: 1.1em;     background-color: rgba(222,222,222,0.3); ">text-align</code>
-                         is a property, and 
-     <code style="color: crimson;     font-family: Consolas,Menlo,'courier new',monospace;     padding-left: 4px;     padding-right: 4px;     font-size: 1.1em;     background-color: rgba(222,222,222,0.3); ">center</code>
-                         is the value.
-  </li>
-    -->                    
-                    
-                    
-                       
-                    
-                    
-                       
+  <div class="skills">
+    <div class="content-wrapper">
+      <h3>What You Will Learn</h3>
+      <div class="subskills">
+      <h4>Programming Concepts</h4>
+      <ul>
+        <li>Variables</li>
+        <li>Basic Data Types and Structures</li>
+        <li>Baisc Flow Controls</li>
+      </ul>
+      </div>
 
-
+      <div class="subskills">
+      <h4>Programming Languages/Skills</h4>
+      <ul>
+        <li>Intro to JavaScript</li>
+        <li>Web Page with HTML and CSS</li>
+        <li>Interactive Web With JavaScript</li>
+        <li>HTML Canvas Game Development</li>
+      </ul>
+      </div>
+    </div>
+  </div>
+  <div class="requirement">
+    <div class="content-wrapper">
+      <h3>Prerequisites</h3>
+      <ul>
+        <li>No previous programming knowledge required</li>
+        <li>Recommended student age: 10 - 15</li>
+        <li>A Gmail account</li>
+        <li>A Laptop/MacBook/iPad/Chromebook with WiFi</li>
+      </ul>
+    </div>
+  </div>
+  <div class="contact">
+    <div class="content-wrapper">
+      <h3>About the Instructor</h3>
+      <p>Mr. Lu is a full-stack software developer and have over 15 years of software development experience in Healthcare industry.
+    </div>
+  </div>
 </body>
+
 </html>
