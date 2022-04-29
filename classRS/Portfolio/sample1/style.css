@@ -95,9 +95,18 @@
   .site-avatar img {
     border-radius: 50%;
     width: 150px;
-    height: 150px;
+    height: 150px;    
+    border: 1px solid rgba(0, 0, 0, 0.05);
   }
-  
+
+.site-avatar .img-border {
+  height: 160px;
+  width: 160px;
+  border: 5px solid rgba(255, 255, 0, 0.8);
+  margin: 0 auto;
+  border-radius: 50%;
+}
+
   .site-avatar img:hover {
     filter: opacity(70%);
   }
@@ -131,6 +140,14 @@
       width: 80px;
       height: 80px;
     }
+
+    .site-avatar .img-border {
+  height: 90px;
+  width: 90px;
+  border: 5px solid rgba(255, 255, 0, 0.8);
+  margin: 0 auto;
+  border-radius: 50%;
+}
   }
   
   @media only screen and (max-width: 640px) {
