@@ -1,0 +1,75 @@
+* {
+            margin: 0;
+            padding: 0;
+        }
+
+  body {
+            background-image: url('../images/fahrenheit.jpeg');
+            background-size: cover;
+            background-position: fill;
+            display: flex;
+            flex-direction: row;
+            margin-top: 80px;
+            margin-left: 30px;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .content-wrapper {
+            color: white;
+            text-align: center;
+            font-family: "Helvetica Neue", Arial, serif;
+            margin-bottom: 30px;
+            margin-right: 20px;
+            line-height: 1.4;
+        }
+
+        .card {
+            width: 270px;
+            height: 480px;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 30px;
+            border-radius: 10%;
+        }
+
+
+  .site-avatar {
+    margin-bottom: 15px;
+  }
+
+  .site-avatar img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+  }
+  
+  .site-avatar img:hover {
+    filter: opacity(70%);
+  }
+     
+  .info h4 {
+    font-size: 1.2em;
+    font-weight: 500;
+    margin-bottom: 28px;
+    border: 1.4px solid white;
+    border-radius: 6px 0px 6px 0px;
+    padding: 5px;
+  }
+  .info p{
+    text-align: left;
+    font-size: 18px;
+  }
+ 
+  .info ul{
+    text-align: left;
+    font-size: 20px;
+  }
+       
+        .info .icons{
+            height: 38px;
+            width: 38px;
+            margin-right: 5px;
+            margin-top: 25px;
+            margin-bottom: 15px;
+        }
