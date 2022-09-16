@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Programming 101 - Javascript</title>
+<!--   
+  <link rel="icon" type="image/x-icon" href="../images/favicon.ico"> 
+  <link rel="stylesheet" href="styles.css">
+  <scrip t src="./script.js"></script>
+  -->
+  
+  <style>
+    body {background-color: #f4fad480; 
+          margin: 10px 20px;
+         font-size: 2em;
+         color: gray;}
+    h1, h2   {color: blue;}
+    li   {margin: 10px 0;}
+    .btn {
+      margin: 20px; 
+      padding: 10px; 
+      font-size: 1.2em;
+    }
+  </style>
+</head>
+<body>
+<h1>Introduction</h1>
+<p>JavaScript is one of the most popular programming languages in the world.</p>
+<p>We mainly use JavaScript to create</p>
+<ul>
+  <li>websites</li>
+  <li>web applications</li>
+  <li>server-side applications using Node.js</li>
+</ul>
+  It can also be used to create mobile applications and programs for IoTs.
+
+<p>Javascript is the first and the only script language that is supported natively by Web broswers.</p>
+  
+<h2>Syntax</h2>
+<ul>
+  <li>White Space</li>
+  <ul>
+      <li>JavaScript does not consider white space meaningful</li>
+  </ul>
+  <li>itentifier</li>
+  An identifier is a sequence of characters that can be used to identify a variable, a function, an object. It can start with a letter, the dollar sign $ or an underscore _, and it can contain digits. For example:
+  <ul>
+    <li>test</li>
+    <li>Test</li>
+    <li>test1</li>
+    <li>$test</li>
+    <li>_test</li>
+  </ul>
+  <li>Comments</li>
+  <ul>
+    <li>use // for single line comment</li>
+    <li>/* and */</li>
+  </ul>
+  <li>Values</li>
+  A  number like <i>5</i> or a string like <i>hello</i> are values. There're many types of values, we'll talk about it later.
+  <ul>
+    <li>5</li>
+    <li>'hello'</li>
+    <li>true</li>
+  </ul>
+  When we need to have a reference to a value, we assign it to a variable. The variable can have a name, and the value is what's stored in a variable, so we can later access that value through the variable name.
+  <li>variables</li>
+  <p>A variable is a value assigned to an identifier, so you can reference and use it later in the program.</p>
+<p>We have 2 main ways to declare variables. The first is to use const:</p>
+<p>
+const a = 0
+</p>
+  <p>The second way is to use let:</p>
+  <p>let a = 0</p>
+What's the difference?
+<p>const defines a constant reference to a value. This means the reference cannot be changed. You cannot reassign a new value to it.
+</p>
+  
+Using let you can assign a new value to it.
+For example, you cannot do this:
+<p>const a = 0</p>
+<p>a = 1</p>
+
+Because you'll get an error: TypeError: Assignment to constant variable..
+<p>On the other hand, you can do it using let:
+</p>
+
+let a = 0
+<p>a = 1</p>
+  <li>Semicolon</li>
+    optional
+  <li>Case sensitivity</li>
+    Javascript is case sensitive. It means a variable named <i>x</i> is different from a variable named <i>X</i>.
+  
+</ul>
+
+
+<li><a href="./tryjs.html">Try Yourself</a>
+
+</body>
+</html>

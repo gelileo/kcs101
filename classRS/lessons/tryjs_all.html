@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>JS Tryout</title>
+  <!--   
+  <link rel="icon" type="image/x-icon" href="../images/favicon.ico"> 
+  <link rel="stylesheet" href="styles.css">
+  <scrip t src="./script.js"></script>
+  -->
+
+  <style>
+    body {
+      background-color: #f4fad480;
+      margin: 10px 20px;
+      font-size: 2em;
+      color: gray;
+    }
+
+    h1,
+    h2 {
+      color: blue;
+    }
+
+    li {
+      margin: 10px 0;
+    }
+
+    .btn {
+      margin: 20px;
+      padding: 10px;
+      font-size: 1.2em;
+    }
+  </style>
+</head>
+
+<body>
+
+  <p id="demo">100</p>
+
+  <button class="btn" onclick="document.getElementById('demo').innerHTML=plus(5)">Plus 5</button>
+
+  <p>Click the button below to change the background color</p>
+  <button class="btn" id="change-color">Change Color</button>
+  <script>
+    let x = 100;
+
+    document.getElementById("change-color").addEventListener("click", changeColor);
+
+    const BGCLR = "#f4fad480"
+    function changeColor() {
+      if (document.body.style.backgroundColor == "red") {
+        document.body.style.backgroundColor = BGCLR
+      } else {
+        document.body.style.backgroundColor = "red"
+      }
+
+    }
+    function plus(a) {
+      x += 5;
+      return x;
+    }
+
+  </script>
+
+</body>
+
+</html>

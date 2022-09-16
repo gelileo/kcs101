@@ -8,9 +8,20 @@
     background: #FDFEFE 
   }
 
+.center {
+    text-align: center;
+    color: #f20713;
+    font-size: 3em;
+    text-shadow: 2px 2px 5px;
+  }
   .hobbies {
     background: #e91e63;
     color: white;
+  }
+
+   .highligted {
+    background: #dcf462 ;
+    color: #2b00ff;
   }
 
   .activities {
@@ -34,22 +45,23 @@
     font-family: "Helvetica Neue", Arial, serif;
     font-size: 22px;
     max-width: 1600px;
-    margin: 0 auto;
-    padding: 0;
+    margin: 10px;
+    padding: 20px;
     font-weight: 200;
     min-width: 420px;
   }
   
-  h1, h2, h3, h4 {
-    margin: 10px 0 15px;
+  h1, h2, h3, h4, li {
+    padding: 5px 0;
+/*     margin: 5px 0; */
   }
   
-  p, ul {
-    margin: 10px 0;
+  ol, ul {
+    margin: 20px 20px;
   }
   
-  ul li {
-    margin-left: 30px;;
+  a {
+    padding-left: 10px;;
   }
   
   /*
