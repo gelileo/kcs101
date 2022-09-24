@@ -1,11 +1,4 @@
-
-# Javascript - Data Types
-## Primitive Types
-  - numbers
-  - strings
-  - booleans
-  - symbols
-### numbers
+# Numbers
 
 - use underscore as seperators for big numbers
   ```
@@ -42,7 +35,7 @@
   1234e-2 === 1234 / 100; // 12.34, decimal point moves 2 times
   ```
 
-####  Hex, binary and octal numbers
+###  Hex, binary and octal numbers
   - Hexadecimal numbers are widely used in JavaScript to represent colors (`color:#F0F5CA8F;` ), encode characters, and for many other things. For example,  
     ```  
     let number = 0xff; // 255 
@@ -56,7 +49,7 @@
     // console.log("Binary number 0b11111111 is: " + a)
     // console.log("Octal number 0o377 is: " + b)
     ```
-#### Number methods
+### Number methods
 - toString(radix)
    ```
   console.log(number.toString(10)) // "255"
@@ -117,12 +110,3 @@
   |-1.6	|-2|	-1|	-2|	-1|
 
   
-### strings
-### booleans
-### symbols
-A “symbol” represents a unique identifier.
-
-A value of this type can be created using Symbol():
-```
-let id = Symbol()
-```
