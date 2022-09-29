@@ -72,7 +72,11 @@
   Does the following return true?
   ```
   0.1 + 0.2 === 0.3
-  ``` 
+  ```
+  try
+  ```
+  console.log(0.1 + 0.2)
+  ```
 - parseInt() and parseFloat()
   
   extract a numeric value out of a string

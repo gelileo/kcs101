@@ -1,5 +1,4 @@
 
-# Javascript - Data Types
 ## Primitive Types
 
   - numbers
@@ -21,6 +20,4 @@
       let id = Symbol()
     ```
 
-## Arrays
-## Objects
-## Map and Sets
+## [Back To Home](./readme.md)

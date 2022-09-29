@@ -37,47 +37,15 @@ let fruits = ["Apple", "Orange", "Plum"];
 
 console.log( fruits.length ); // 3We can replace an element:
 ```
+## Commonly Used 
+### [Add and Remove Items](./array/push-pop.md)
+### [Multi-dimension Array](./array/multi-dim.md)
+
+## Advanced
+
+### [Splice](./array/splice.md)
+### [Slice](./array/slice-pop.md)
+### [Concat](./array/concat.md)
 
 
-## Push and Pop
-
-`push` adds an element to the end.
-
-`pop` takes an element from the end.
-
-Like a stack of cards
-
-pop
-Extracts the last element of the array and returns it:
-```
-let fruits = ["Apple", "Orange", "Pear"];
-
-console.log( fruits.pop() ); // remove "Pear" and alert it
-
-console.log( fruits ); // Apple, Orange
-```
-Both `fruits.pop()` and `fruits.at(-1)` return the last element of the array, but `fruits.pop()` also modifies the array by removing it.
-
-push
-Append the element to the end of the array:
-```
-let fruits = ["Apple", "Orange"];
-
-fruits.push("Pear");
-
-console.log( fruits ); // Apple, Orange, Pear
-```
-The call `fruits.push(...)` is equal to `fruits[fruits.length] = ...`.
-
-
-## Multidimensional arrays
-Arrays can have items that are also arrays. We can use it for multidimensional arrays, for example to store matrices:
-```
-let matrix = [
-  [1, 2, 3],
-  [4, 5, 6],
-  [7, 8, 9]
-];
-
-console.log( matrix[1][1] ); // 5, the central element
-```
+## [Back To Home](./readme.md)
