@@ -1,6 +1,8 @@
-let number = parseInt(prompt("Enter a number under 20 and let others to guess", ''));
+// let number = parseInt(prompt("Enter a number under 20 and let others to guess", ''));
 
-let guess = parseInt(prompt('Guess a number?', ''), 10);
+let number = Math.floor(Math.random() * 20);
+
+let guess = parseInt(prompt('Guess a number betwee 0 and 20', ''), 10);
 let done = false;
 while (!done) {
   
