@@ -1,4 +1,15 @@
-  .content-wrapper {
+/* define global color variables */
+:root{
+    --dark: #2b2d42;
+    --light: #adb5bd;
+    --border: #dee2e6;
+    --border-btn: #edf2f4;
+    --green-btn: #4CAF50;
+    --blue-btn: #008CBA;
+    --red-btn: #f44336;
+    --gray-btn: #e7e7e7;
+}
+.content-wrapper {
     line-height: 1.4;
     margin: 0 auto;
     max-width: 900px;
@@ -197,3 +208,13 @@
     justify-content: center;
   }
 
+.button {
+  border-radius: 15px;
+  border-color: #92a9ed;
+  background-color: var(--gray-btn);
+  color: black;
+  padding: 10px; 
+  width: 120px;
+  height: 40px; 
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
