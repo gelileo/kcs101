@@ -52,3 +52,15 @@ function text(showWords, textX, textY, fillColor, fontSizeStyle, textAlignment) 
   canvasContext.textAlign = textAlignment;
   canvasContext.fillText(showWords, textX, textY);
 }
+
+
+/**
+  Update location (mouseX, mouseY) as mouse moves
+ */
+function updateMousePosition(evt) {
+  var rect = canvas.getBoundingClientRect();
+  var root = document.documentElement;
+
+  mouseX = evt.clientX - rect.left - root.scrollLeft;
+  mouseY = evt.clientY - rect.top - root.scrollTop;
+}
